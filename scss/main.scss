@@ -1,0 +1,145 @@
+@import 'config';
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap);
+
+body{
+    background-image:url("../img/bg-stars.svg") ,url("../img/pattern-hills.svg");
+    background-position: top ,bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-color: $Neutral-color3 ;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 700px;
+    font-family:'Red Hat Text', sans-serif;
+
+}
+.home{
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    h1{
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 5rem;
+        margin-top: 7rem;
+        color:$Neutral-color1;
+    }
+    .new1{
+        border: 0.001mm solid #1e1f29;
+        position:absolute;
+        width: 100%;
+        top:19.1rem;
+    }
+    .block_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .card__flib{
+            box-sizing: border-box;
+            border:1px $Neutral-color2 solid;
+            box-shadow: 2px 7px 5px 0px rgba(0, 0, 0, 0.24);
+            background-color: $Neutral-color2;
+            text-align: center;
+            border-radius: 4px;
+            font-size:100px;
+            width: 12%;
+            padding: 10px;
+            margin: 10px 20px;
+            color:$Primary-color2;
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            background-color: $Neutral-color3;
+            border-radius: 50%;
+            position: absolute;
+            top:18.7rem;
+        }
+        .dot1 {left: 19.2rem;}
+        .dot2 {left: 29.95rem;}
+        .dot3 {left: 32.5rem;}
+        .dot4 {left: 43.2rem;}
+        .dot5 {left: 45.8rem;}
+        .dot6 {left: 56.55rem;}
+        .dot7 {left: 59.2rem;}
+        .dot8 {left: 69.9rem;}
+        .card_name{
+            letter-spacing: 3px;
+            text-align: center;
+            width: 14%;
+            padding: 10px;
+            margin: 5px;
+            color: $Primary-color1;
+        }
+
+
+    }
+}
+.social_icons{
+    position: fixed;
+    bottom: 5rem;
+    left: 39.5rem;
+    a{
+        color: $Primary-color1;
+        padding: 1rem;
+        &:hover{
+            color:$Primary-color2;
+        }
+    }
+}
+.end{
+    letter-spacing: 5px;
+    margin: 15px;
+    text-align: center;
+    color:$Neutral-color1;
+    font-size: 50px;
+}
+@media screen and (max-width: 375px) {
+    body{
+        background-size:auto,370px 110px;
+    }
+    .home{
+        .new1{
+            border: 0.001px solid #1e1f29;
+            position:absolute;
+            width: 100%;
+            top:17.69rem;
+        }
+        .block_card{
+            .card__flib{
+                font-size:35px;
+                width: 18%;
+                padding: 10px 10px;
+                margin: 3px 10px;
+            }
+            .dot{
+                height: 10px;
+                width: 10px;
+                background-color: $Neutral-color3;
+                border-radius: 50%;
+                position: absolute;
+                top:17.45rem;
+            }
+            .dot1 {left: 1.1rem;}
+            .dot2 {left: 5.3rem;}
+            .dot3 {left: 6.6rem;}
+            .dot4 {left: 10.8rem;}
+            .dot5 {left: 12.05rem;}
+            .dot6 {left: 16.25rem;}
+            .dot7 {left: 17.5rem;}
+            .dot8 {left: 21.75rem;}
+            .card_name{
+                text-align: center;
+                width: 20%;
+                font-size:7px;
+                padding: 5px;
+                margin:7px ;
+
+            }
+        }
+    }
+    .social_icons{
+        bottom: 3rem;
+        left: 6rem;
+    }
+}
